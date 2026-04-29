@@ -110,7 +110,8 @@
 				//select the background of the page
 				const html = document.querySelector("html");
 				const banner = document.querySelector("header > 2h");
-
+				const logo = document.getElementById("logo");
+				const wear = document.getElementById("wear");
 		switch(season){
 			case "spring":
 				html.style.backgroundColor = "#2B7129";
@@ -119,7 +120,8 @@
 			break;
 
 		}
-
+			logo.src = "images/" + season + "gif";
+			wear.src = "images/" + wear + "-wear.jpg";
 
 		    
 		    // 4. Now you can use that 'season' variable to change pics/colors
